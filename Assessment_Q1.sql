@@ -1,6 +1,6 @@
 SELECT 
     u.id AS owner_id,
-    TRIM(CONCAT(u.first_name, ' ', u.last_name)) AS name,
+    TRIM(CONCAT(u.first_name, ' ', u.last_name)) AS name, 
     COUNT(DISTINCT CASE 
         WHEN p.is_regular_savings = 1 AND sa.confirmed_amount > 0 THEN sa.plan_id 
     END) AS savings_count,
