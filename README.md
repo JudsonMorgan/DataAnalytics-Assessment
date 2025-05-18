@@ -34,7 +34,7 @@ The business wants to identify cross-selling opportunities by finding customers 
 The finance team wants to segment customers by how often they transact.
 
 ### Approach
-- Extracted transaction dates and normalized them to months using `DATE_FORMAT(transaction_date, '%Y-%m-01')` function in MySQL.
+- Extracted transaction dates and normalized them to months using `DATE_FORMAT(transaction_date, '%Y-%m-01')`.
 - Counted transactions per user per month.
 - Averaged the monthly transaction counts across the total number of months each user has transacted.
 - Categorized users based on frequency:
